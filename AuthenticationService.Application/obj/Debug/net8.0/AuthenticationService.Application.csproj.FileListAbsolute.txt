@@ -1,0 +1,15 @@
+D:\Single_Project\nuLearn\AuthenticationService.Application\bin\Debug\net8.0\AuthenticationService.Application.deps.json
+D:\Single_Project\nuLearn\AuthenticationService.Application\bin\Debug\net8.0\AuthenticationService.Application.dll
+D:\Single_Project\nuLearn\AuthenticationService.Application\bin\Debug\net8.0\AuthenticationService.Application.pdb
+D:\Single_Project\nuLearn\AuthenticationService.Application\bin\Debug\net8.0\AuthenticationService.Domain.dll
+D:\Single_Project\nuLearn\AuthenticationService.Application\bin\Debug\net8.0\AuthenticationService.Domain.pdb
+D:\Single_Project\nuLearn\AuthenticationService.Application\obj\Debug\net8.0\AuthenticationService.Application.csproj.AssemblyReference.cache
+D:\Single_Project\nuLearn\AuthenticationService.Application\obj\Debug\net8.0\AuthenticationService.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Single_Project\nuLearn\AuthenticationService.Application\obj\Debug\net8.0\AuthenticationService.Application.AssemblyInfoInputs.cache
+D:\Single_Project\nuLearn\AuthenticationService.Application\obj\Debug\net8.0\AuthenticationService.Application.AssemblyInfo.cs
+D:\Single_Project\nuLearn\AuthenticationService.Application\obj\Debug\net8.0\AuthenticationService.Application.csproj.CoreCompileInputs.cache
+D:\Single_Project\nuLearn\AuthenticationService.Application\obj\Debug\net8.0\Authenti.AE9395CF.Up2Date
+D:\Single_Project\nuLearn\AuthenticationService.Application\obj\Debug\net8.0\AuthenticationService.Application.dll
+D:\Single_Project\nuLearn\AuthenticationService.Application\obj\Debug\net8.0\refint\AuthenticationService.Application.dll
+D:\Single_Project\nuLearn\AuthenticationService.Application\obj\Debug\net8.0\AuthenticationService.Application.pdb
+D:\Single_Project\nuLearn\AuthenticationService.Application\obj\Debug\net8.0\ref\AuthenticationService.Application.dll

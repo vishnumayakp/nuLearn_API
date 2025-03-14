@@ -1,0 +1,15 @@
+D:\Single_Project\nuLearn\CourseService.Application\bin\Debug\net8.0\CourseService.Application.deps.json
+D:\Single_Project\nuLearn\CourseService.Application\bin\Debug\net8.0\CourseService.Application.dll
+D:\Single_Project\nuLearn\CourseService.Application\bin\Debug\net8.0\CourseService.Application.pdb
+D:\Single_Project\nuLearn\CourseService.Application\bin\Debug\net8.0\AuthenticationService.Domain.dll
+D:\Single_Project\nuLearn\CourseService.Application\bin\Debug\net8.0\AuthenticationService.Domain.pdb
+D:\Single_Project\nuLearn\CourseService.Application\obj\Debug\net8.0\CourseService.Application.csproj.AssemblyReference.cache
+D:\Single_Project\nuLearn\CourseService.Application\obj\Debug\net8.0\CourseService.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Single_Project\nuLearn\CourseService.Application\obj\Debug\net8.0\CourseService.Application.AssemblyInfoInputs.cache
+D:\Single_Project\nuLearn\CourseService.Application\obj\Debug\net8.0\CourseService.Application.AssemblyInfo.cs
+D:\Single_Project\nuLearn\CourseService.Application\obj\Debug\net8.0\CourseService.Application.csproj.CoreCompileInputs.cache
+D:\Single_Project\nuLearn\CourseService.Application\obj\Debug\net8.0\CourseSe.B679EDF9.Up2Date
+D:\Single_Project\nuLearn\CourseService.Application\obj\Debug\net8.0\CourseService.Application.dll
+D:\Single_Project\nuLearn\CourseService.Application\obj\Debug\net8.0\refint\CourseService.Application.dll
+D:\Single_Project\nuLearn\CourseService.Application\obj\Debug\net8.0\CourseService.Application.pdb
+D:\Single_Project\nuLearn\CourseService.Application\obj\Debug\net8.0\ref\CourseService.Application.dll

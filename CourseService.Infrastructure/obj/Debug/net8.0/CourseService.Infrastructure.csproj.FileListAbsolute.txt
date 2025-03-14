@@ -1,0 +1,15 @@
+D:\Single_Project\nuLearn\CourseService.Infrastructure\bin\Debug\net8.0\CourseService.Infrastructure.deps.json
+D:\Single_Project\nuLearn\CourseService.Infrastructure\bin\Debug\net8.0\CourseService.Infrastructure.dll
+D:\Single_Project\nuLearn\CourseService.Infrastructure\bin\Debug\net8.0\CourseService.Infrastructure.pdb
+D:\Single_Project\nuLearn\CourseService.Infrastructure\bin\Debug\net8.0\AuthenticationService.Domain.dll
+D:\Single_Project\nuLearn\CourseService.Infrastructure\bin\Debug\net8.0\AuthenticationService.Domain.pdb
+D:\Single_Project\nuLearn\CourseService.Infrastructure\obj\Debug\net8.0\CourseService.Infrastructure.csproj.AssemblyReference.cache
+D:\Single_Project\nuLearn\CourseService.Infrastructure\obj\Debug\net8.0\CourseService.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Single_Project\nuLearn\CourseService.Infrastructure\obj\Debug\net8.0\CourseService.Infrastructure.AssemblyInfoInputs.cache
+D:\Single_Project\nuLearn\CourseService.Infrastructure\obj\Debug\net8.0\CourseService.Infrastructure.AssemblyInfo.cs
+D:\Single_Project\nuLearn\CourseService.Infrastructure\obj\Debug\net8.0\CourseService.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Single_Project\nuLearn\CourseService.Infrastructure\obj\Debug\net8.0\CourseSe.967CF3E4.Up2Date
+D:\Single_Project\nuLearn\CourseService.Infrastructure\obj\Debug\net8.0\CourseService.Infrastructure.dll
+D:\Single_Project\nuLearn\CourseService.Infrastructure\obj\Debug\net8.0\refint\CourseService.Infrastructure.dll
+D:\Single_Project\nuLearn\CourseService.Infrastructure\obj\Debug\net8.0\CourseService.Infrastructure.pdb
+D:\Single_Project\nuLearn\CourseService.Infrastructure\obj\Debug\net8.0\ref\CourseService.Infrastructure.dll

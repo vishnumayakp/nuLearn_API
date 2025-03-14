@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "yHcmvPf+ialmPs1UQ09shz9AFkXvRPw5HNgFRgjnMLA=",
+  "Source": "nuLearn_ApiGateway",
+  "BasePath": "_content/nuLearn_ApiGateway",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

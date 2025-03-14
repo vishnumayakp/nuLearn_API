@@ -1,0 +1,11 @@
+D:\Single_Project\nuLearn\PaymentService.Domain\bin\Debug\net8.0\PaymentService.Domain.deps.json
+D:\Single_Project\nuLearn\PaymentService.Domain\bin\Debug\net8.0\PaymentService.Domain.dll
+D:\Single_Project\nuLearn\PaymentService.Domain\bin\Debug\net8.0\PaymentService.Domain.pdb
+D:\Single_Project\nuLearn\PaymentService.Domain\obj\Debug\net8.0\PaymentService.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Single_Project\nuLearn\PaymentService.Domain\obj\Debug\net8.0\PaymentService.Domain.AssemblyInfoInputs.cache
+D:\Single_Project\nuLearn\PaymentService.Domain\obj\Debug\net8.0\PaymentService.Domain.AssemblyInfo.cs
+D:\Single_Project\nuLearn\PaymentService.Domain\obj\Debug\net8.0\PaymentService.Domain.csproj.CoreCompileInputs.cache
+D:\Single_Project\nuLearn\PaymentService.Domain\obj\Debug\net8.0\PaymentService.Domain.dll
+D:\Single_Project\nuLearn\PaymentService.Domain\obj\Debug\net8.0\refint\PaymentService.Domain.dll
+D:\Single_Project\nuLearn\PaymentService.Domain\obj\Debug\net8.0\PaymentService.Domain.pdb
+D:\Single_Project\nuLearn\PaymentService.Domain\obj\Debug\net8.0\ref\PaymentService.Domain.dll
