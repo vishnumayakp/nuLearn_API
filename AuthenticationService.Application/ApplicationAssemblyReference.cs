@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AuthenticationService.Infrastructure.Repositories
+namespace AuthenticationService.Application
 {
-    public class UserRepository
+    public class ApplicationAssemblyReference
     {
-
     }
 }

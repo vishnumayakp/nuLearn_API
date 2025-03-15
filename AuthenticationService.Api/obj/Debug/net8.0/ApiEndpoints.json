@@ -1,1 +1,98 @@
-[]
+[
+  {
+    "ContainingType": "AuthenticationService.Api.Controller.UserAuthController",
+    "Method": "ForgetPassword",
+    "RelativePath": "api/UserAuth/forget-password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "AuthenticationService.Application.Auth.Commands.ForgetPasswordCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AuthenticationService.Api.Controller.UserAuthController",
+    "Method": "UserLogin",
+    "RelativePath": "api/UserAuth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userLoginDto",
+        "Type": "AuthenticationService.Application.DTO.UserAuthDto.UserLoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AuthenticationService.Api.Controller.UserAuthController",
+    "Method": "RegisterUser",
+    "RelativePath": "api/UserAuth/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userRegisterDto",
+        "Type": "AuthenticationService.Application.DTO.UserAuthDto.UserRegisterDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AuthenticationService.Api.Controller.UserAuthController",
+    "Method": "ResetPassword",
+    "RelativePath": "api/UserAuth/reset-password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "AuthenticationService.Application.Auth.Commands.ResetPasswordCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AuthenticationService.Api.Controller.UserAuthController",
+    "Method": "VerifyEmail",
+    "RelativePath": "api/UserAuth/verify-user",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "verifyOtpCommand",
+        "Type": "AuthenticationService.Application.Auth.Commands.VerifyOtpCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AuthenticationService.Api.Controller.UserAuthController",
+    "Method": "VerifyEmailForResetpassWord",
+    "RelativePath": "api/UserAuth/verifyOtp-resetpassword",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "AuthenticationService.Application.Auth.Commands.VerifyOtpResetPwCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

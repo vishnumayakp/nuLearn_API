@@ -17,3 +17,4 @@ D:\Single_Project\nuLearn\AuthenticationService.Infrastructure\obj\Debug\net8.0\
 D:\Single_Project\nuLearn\AuthenticationService.Infrastructure\obj\Debug\net8.0\AuthenticationService.Infrastructure.pdb
 D:\Single_Project\nuLearn\AuthenticationService.Infrastructure\obj\Debug\net8.0\AuthenticationService.Infrastructure.genruntimeconfig.cache
 D:\Single_Project\nuLearn\AuthenticationService.Infrastructure\obj\Debug\net8.0\ref\AuthenticationService.Infrastructure.dll
+D:\Single_Project\nuLearn\AuthenticationService.Infrastructure\obj\Debug\net8.0\AuthenticationService.Infrastructure.sourcelink.json

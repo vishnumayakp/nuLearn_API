@@ -2,6 +2,10 @@
 using Microsoft.EntityFrameworkCore;
 using DotNetEnv;
 using AuthenticationService.Application.Common;
+using AuthenticationService.Application.ServiceInterfaces;
+using AuthenticationService.Infrastructure.Services;
+using AuthenticationService.Application.RepoInterfaces;
+using AuthenticationService.Infrastructure.Repositories;
 
 namespace AuthenticationService.Infrastructure
 {
@@ -15,6 +19,10 @@ namespace AuthenticationService.Infrastructure
             {
                 options.UseNpgsql(appsettings.DbConnectionString);
             });
+            services.AddTransient<IEmailService, EmailService>();
+            services.AddTransient<IJwtService, JwtService>();
+
+            services.AddTransient<IUserAuthRepo, UserAuthRepository>();
 
             return services;
         }

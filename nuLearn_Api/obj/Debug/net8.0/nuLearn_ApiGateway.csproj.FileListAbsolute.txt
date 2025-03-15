@@ -41,3 +41,4 @@ D:\Single_Project\nuLearn\nuLearn_Api\obj\Debug\net8.0\refint\nuLearn_ApiGateway
 D:\Single_Project\nuLearn\nuLearn_Api\obj\Debug\net8.0\nuLearn_ApiGateway.pdb
 D:\Single_Project\nuLearn\nuLearn_Api\obj\Debug\net8.0\nuLearn_ApiGateway.genruntimeconfig.cache
 D:\Single_Project\nuLearn\nuLearn_Api\obj\Debug\net8.0\ref\nuLearn_ApiGateway.dll
+D:\Single_Project\nuLearn\nuLearn_Api\obj\Debug\net8.0\nuLearn_ApiGateway.sourcelink.json

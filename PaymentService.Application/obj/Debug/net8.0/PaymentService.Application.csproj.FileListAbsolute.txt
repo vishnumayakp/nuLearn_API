@@ -13,3 +13,4 @@ D:\Single_Project\nuLearn\PaymentService.Application\obj\Debug\net8.0\PaymentSer
 D:\Single_Project\nuLearn\PaymentService.Application\obj\Debug\net8.0\refint\PaymentService.Application.dll
 D:\Single_Project\nuLearn\PaymentService.Application\obj\Debug\net8.0\PaymentService.Application.pdb
 D:\Single_Project\nuLearn\PaymentService.Application\obj\Debug\net8.0\ref\PaymentService.Application.dll
+D:\Single_Project\nuLearn\PaymentService.Application\obj\Debug\net8.0\PaymentService.Application.sourcelink.json

@@ -151,3 +151,11 @@ D:\Single_Project\nuLearn\AuthenticationService.Api\obj\Debug\net8.0\refint\Auth
 D:\Single_Project\nuLearn\AuthenticationService.Api\obj\Debug\net8.0\AuthenticationService.Api.pdb
 D:\Single_Project\nuLearn\AuthenticationService.Api\obj\Debug\net8.0\AuthenticationService.Api.genruntimeconfig.cache
 D:\Single_Project\nuLearn\AuthenticationService.Api\obj\Debug\net8.0\ref\AuthenticationService.Api.dll
+D:\Single_Project\nuLearn\AuthenticationService.Api\obj\Debug\net8.0\AuthenticationService.Api.sourcelink.json
+D:\Single_Project\nuLearn\AuthenticationService.Api\bin\Debug\net8.0\BCrypt.Net-Next.dll
+D:\Single_Project\nuLearn\AuthenticationService.Api\bin\Debug\net8.0\Microsoft.Bcl.Memory.dll
+D:\Single_Project\nuLearn\AuthenticationService.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Single_Project\nuLearn\AuthenticationService.Api\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Single_Project\nuLearn\AuthenticationService.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\Single_Project\nuLearn\AuthenticationService.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\Single_Project\nuLearn\AuthenticationService.Api\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

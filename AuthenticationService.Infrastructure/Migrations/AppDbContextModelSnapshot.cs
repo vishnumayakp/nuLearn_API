@@ -28,11 +28,27 @@ namespace AuthenticationService.Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
+                    b.Property<string>("Created_by")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("Created_on")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Deleted_by")
+                        .HasColumnType("text");
+
+                    b.Property<DateTime?>("Deleted_on")
+                        .HasColumnType("timestamp with time zone");
+
                     b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<bool>("Is_blocked")
+                        .HasColumnType("boolean");
+
+                    b.Property<bool>("Is_deleted")
                         .HasColumnType("boolean");
 
                     b.Property<string>("Name")
@@ -47,9 +63,44 @@ namespace AuthenticationService.Infrastructure.Migrations
                     b.Property<string>("Profile")
                         .HasColumnType("text");
 
+                    b.Property<string>("Updated_by")
+                        .HasColumnType("text");
+
+                    b.Property<DateTime?>("Updated_on")
+                        .HasColumnType("timestamp with time zone");
+
                     b.HasKey("Id");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("PlotLink.DAL.Entities.VerifyUser", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<TimeOnly>("Expire_time")
+                        .HasColumnType("time without time zone");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<int>("Otp")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("VerifyUsers");
                 });
 #pragma warning restore 612, 618
         }

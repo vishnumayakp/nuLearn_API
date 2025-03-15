@@ -13,3 +13,4 @@ D:\Single_Project\nuLearn\CourseService.Infrastructure\obj\Debug\net8.0\CourseSe
 D:\Single_Project\nuLearn\CourseService.Infrastructure\obj\Debug\net8.0\refint\CourseService.Infrastructure.dll
 D:\Single_Project\nuLearn\CourseService.Infrastructure\obj\Debug\net8.0\CourseService.Infrastructure.pdb
 D:\Single_Project\nuLearn\CourseService.Infrastructure\obj\Debug\net8.0\ref\CourseService.Infrastructure.dll
+D:\Single_Project\nuLearn\CourseService.Infrastructure\obj\Debug\net8.0\CourseService.Infrastructure.sourcelink.json

@@ -9,3 +9,4 @@ D:\Single_Project\nuLearn\AuthenticationService.Domain\obj\Debug\net8.0\Authenti
 D:\Single_Project\nuLearn\AuthenticationService.Domain\obj\Debug\net8.0\refint\AuthenticationService.Domain.dll
 D:\Single_Project\nuLearn\AuthenticationService.Domain\obj\Debug\net8.0\AuthenticationService.Domain.pdb
 D:\Single_Project\nuLearn\AuthenticationService.Domain\obj\Debug\net8.0\ref\AuthenticationService.Domain.dll
+D:\Single_Project\nuLearn\AuthenticationService.Domain\obj\Debug\net8.0\AuthenticationService.Domain.sourcelink.json

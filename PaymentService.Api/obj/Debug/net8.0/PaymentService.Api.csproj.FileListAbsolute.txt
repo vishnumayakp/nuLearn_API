@@ -64,3 +64,4 @@ D:\Single_Project\nuLearn\PaymentService.Api\obj\Debug\net8.0\refint\PaymentServ
 D:\Single_Project\nuLearn\PaymentService.Api\obj\Debug\net8.0\PaymentService.Api.pdb
 D:\Single_Project\nuLearn\PaymentService.Api\obj\Debug\net8.0\PaymentService.Api.genruntimeconfig.cache
 D:\Single_Project\nuLearn\PaymentService.Api\obj\Debug\net8.0\ref\PaymentService.Api.dll
+D:\Single_Project\nuLearn\PaymentService.Api\obj\Debug\net8.0\PaymentService.Api.sourcelink.json
