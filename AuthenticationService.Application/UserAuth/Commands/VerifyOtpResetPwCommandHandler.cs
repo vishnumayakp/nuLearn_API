@@ -11,18 +11,18 @@ namespace AuthenticationService.Application.Auth.Commands
 {
     public class VerifyOtpResetPwCommandHandler:IRequestHandler<VerifyOtpResetPwCommand,bool>
     {
-        private readonly IUserAuthRepo _userAuthRepo;
+        private readonly IInstructorAuthRepo _authRepo;
 
-        public VerifyOtpResetPwCommandHandler(IUserAuthRepo userAuthRepo)
+        public VerifyOtpResetPwCommandHandler(IInstructorAuthRepo authRepo)
         {
-            _userAuthRepo = userAuthRepo;
+            _authRepo = authRepo;
         }
 
         public async Task<bool> Handle(VerifyOtpResetPwCommand request , CancellationToken cancellationToken)
         {
             try
             {
-                var user = await _userAuthRepo.GetVerifyUserByEmail(request.Email);
+                var user = await _authRepo.GetVerifyUserByEmail(request.Email);
                 if (user == null)
                 {
                     throw new Exception("User Not Found");
@@ -32,8 +32,8 @@ namespace AuthenticationService.Application.Auth.Commands
 
                 if(currentTime<= user.Expire_time)
                 {
-                    await _userAuthRepo.RemoveVerifyUser(user);
-                    await _userAuthRepo.SaveChangesAsync();
+                    await _authRepo.RemoveVerifyUser(user);
+                    await _authRepo.SaveChangesAsync();
                     return true;
                 }
                 return false;

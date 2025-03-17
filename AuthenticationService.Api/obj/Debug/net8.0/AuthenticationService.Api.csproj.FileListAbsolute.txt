@@ -159,3 +159,5 @@ D:\Single_Project\nuLearn\AuthenticationService.Api\bin\Debug\net8.0\Microsoft.I
 D:\Single_Project\nuLearn\AuthenticationService.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
 D:\Single_Project\nuLearn\AuthenticationService.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 D:\Single_Project\nuLearn\AuthenticationService.Api\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Single_Project\nuLearn\AuthenticationService.Api\bin\Debug\net8.0\CloudinaryDotNet.dll
+D:\Single_Project\nuLearn\AuthenticationService.Api\bin\Debug\net8.0\Newtonsoft.Json.dll

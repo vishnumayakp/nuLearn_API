@@ -9,18 +9,18 @@ using System.Threading.Tasks;
 
 namespace AuthenticationService.Application.InstructorAuth.Commands
 {
-    public class LoginCommandHandler:IRequestHandler<LoginCommand, string>
+    public class InstructorLoginCommandHandler:IRequestHandler<InstructorLoginCommand, string>
     {
         private readonly IInstructorAuthRepo _authRepo;
         private readonly IJwtInstrService _jwtInstrService;
 
-        public LoginCommandHandler(IInstructorAuthRepo authRepo, IJwtInstrService jwtInstrService)
+        public InstructorLoginCommandHandler(IInstructorAuthRepo authRepo, IJwtInstrService jwtInstrService)
         {
             _authRepo = authRepo;
             _jwtInstrService = jwtInstrService;
         }
 
-        public async Task<string> Handle(LoginCommand command, CancellationToken cancellationToken)
+        public async Task<string> Handle(InstructorLoginCommand command, CancellationToken cancellationToken)
         {
             try
             {
@@ -36,6 +36,9 @@ namespace AuthenticationService.Application.InstructorAuth.Commands
                 }
                 var token = _jwtInstrService.GenerateJwtToken(instructor);
                 return token;
+            }catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
             }
         }
     }

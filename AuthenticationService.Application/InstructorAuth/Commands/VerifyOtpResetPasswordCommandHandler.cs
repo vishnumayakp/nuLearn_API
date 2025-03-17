@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AuthenticationService.Application.InstructorAuth.Commands
 {
-    internal class VerifyOtpResetPasswordCommandHandler
+    public class VerifyOtpResetPasswordCommandHandler
     {
     }
 }

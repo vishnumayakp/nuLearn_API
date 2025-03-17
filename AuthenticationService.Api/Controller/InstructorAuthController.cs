@@ -3,6 +3,7 @@ using AuthenticationService.Application.Common.ApiResponse;
 using AuthenticationService.Application.DTO.InstructorAuthDto;
 using AuthenticationService.Application.DTO.UserAuthDto;
 using AuthenticationService.Application.InstructorAuth.Commands;
+using AuthenticationService.Infrastructure.Services;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -21,12 +22,14 @@ namespace AuthenticationService.Api.Controller
         }
 
         [HttpPost("register")]
+        [Consumes("multipart/form-data")]
 
-        public async Task<IActionResult> Register([FromBody] InstructorRegisterDto instructorAuthDto)
+        public async Task<IActionResult> Register([FromForm] InstructorRegisterDto instructorAuthDto)
         {
             try
             {
-                var command = new RegisterInstructorCommand(instructorAuthDto.Name, instructorAuthDto.Email, instructorAuthDto.Password, instructorAuthDto.UploadFile);
+
+                var command = new RegisterInstructorCommand(instructorAuthDto.Name, instructorAuthDto.Email, instructorAuthDto.Password, instructorAuthDto.file);
                 var register = await _mediator.Send(command);
 
                 if (register)

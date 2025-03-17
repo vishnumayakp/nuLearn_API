@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace AuthenticationService.Infrastructure.Services
 {
-    public class CloudinaryService:ICoudinaryService
+    public class CloudinaryService:ICloudinaryService
     {
         private readonly Cloudinary _cloudinary;
 

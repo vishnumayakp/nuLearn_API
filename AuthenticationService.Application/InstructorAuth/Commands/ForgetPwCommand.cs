@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MediatR;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,12 @@ using System.Threading.Tasks;
 
 namespace AuthenticationService.Application.InstructorAuth.Commands
 {
-    internal class ForgetPasswordCommand
+    public class ForgetPwCommand:IRequest<bool>
     {
+        public string Email { get; set; }
+        public ForgetPwCommand(string email)
+        {
+            Email = email;
+        }
     }
 }

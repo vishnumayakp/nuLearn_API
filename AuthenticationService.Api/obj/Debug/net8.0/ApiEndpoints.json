@@ -1,5 +1,116 @@
 [
   {
+    "ContainingType": "AuthenticationService.Api.Controller.InstructorAuthController",
+    "Method": "ForgetPassword",
+    "RelativePath": "api/InstructorAuth/forget-password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "AuthenticationService.Application.InstructorAuth.Commands.ForgetPwCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AuthenticationService.Api.Controller.InstructorAuthController",
+    "Method": "InstructorLogin",
+    "RelativePath": "api/InstructorAuth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDto",
+        "Type": "AuthenticationService.Application.DTO.InstructorAuthDto.InstructorLoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AuthenticationService.Api.Controller.InstructorAuthController",
+    "Method": "Register",
+    "RelativePath": "api/InstructorAuth/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Password",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AuthenticationService.Api.Controller.InstructorAuthController",
+    "Method": "ResetPassword",
+    "RelativePath": "api/InstructorAuth/reset-password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "AuthenticationService.Application.InstructorAuth.Commands.ResetPwCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AuthenticationService.Api.Controller.InstructorAuthController",
+    "Method": "VerifyEmail",
+    "RelativePath": "api/InstructorAuth/verify-user",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "verifyOtpCommand",
+        "Type": "AuthenticationService.Application.InstructorAuth.Commands.VerifyInstrOtpCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AuthenticationService.Api.Controller.InstructorAuthController",
+    "Method": "VerifyEmailForResetpassWord",
+    "RelativePath": "api/InstructorAuth/verifyOtp-resetpassword",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "AuthenticationService.Application.InstructorAuth.Commands.VerifyOtpResetPasswordCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "AuthenticationService.Api.Controller.UserAuthController",
     "Method": "ForgetPassword",
     "RelativePath": "api/UserAuth/forget-password",
