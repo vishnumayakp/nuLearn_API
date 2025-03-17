@@ -26,13 +26,24 @@ namespace AuthenticationService.Infrastructure.Repositories
             try
             {
                 var instructor = await _appDbContext.Instructors.FirstOrDefaultAsync(e => e.Email == email);
+                if (instructor == null)
+                {
+                    Console.WriteLine($"Instructor not found for email: {email}");
+                }
+                else
+                {
+                    Console.WriteLine($"Instructor found: {instructor.Email}");
+                }
                 return instructor;
             }
             catch (Exception ex)
             {
+                Console.WriteLine($"Error fetching instructor: {ex.Message}");
                 throw new Exception(ex.InnerException?.Message ?? ex.Message);
             }
         }
+
+
 
         public async Task<bool> AddInstructor(Instructor instructor)
         {
@@ -40,21 +51,21 @@ namespace AuthenticationService.Infrastructure.Repositories
             return true;
         }
 
-        public async Task<bool> AddVerifyUser(VerifyUser instructor)
+        public async Task<bool> AddVerifyUser(VerifyInstructor instructor)
         {
-            await _appDbContext.VerifyUsers.AddAsync(instructor);
+            await _appDbContext.VerifyInstructors.AddAsync(instructor);
             return true;
         }
 
-        public async Task<VerifyUser> GetVerifyUserByEmail(string email)
+        public async Task<VerifyInstructor> GetVerifyUserByEmail(string email)
         {
-            var verifiedInstructor = await _appDbContext.VerifyUsers.FirstOrDefaultAsync(e => e.Email == email);
+            var verifiedInstructor = await _appDbContext.VerifyInstructors.FirstOrDefaultAsync(e => e.Email == email);
             return verifiedInstructor;
         }
 
-        public async Task<bool> RemoveVerifyUser(VerifyUser verifyInstructor)
+        public async Task<bool> RemoveVerifyUser(VerifyInstructor verifyInstructor)
         {
-             _appDbContext.VerifyUsers.Remove(verifyInstructor);
+             _appDbContext.VerifyInstructors.Remove(verifyInstructor);
             return true;
         }
 

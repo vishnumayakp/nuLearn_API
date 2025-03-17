@@ -11,9 +11,9 @@ namespace AuthenticationService.Application.Auth.Commands
 {
     public class VerifyOtpResetPwCommandHandler:IRequestHandler<VerifyOtpResetPwCommand,bool>
     {
-        private readonly IInstructorAuthRepo _authRepo;
+        private readonly IUserAuthRepo _authRepo;
 
-        public VerifyOtpResetPwCommandHandler(IInstructorAuthRepo authRepo)
+        public VerifyOtpResetPwCommandHandler(IUserAuthRepo authRepo)
         {
             _authRepo = authRepo;
         }

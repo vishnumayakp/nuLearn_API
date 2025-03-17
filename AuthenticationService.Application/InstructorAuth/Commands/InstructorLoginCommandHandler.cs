@@ -22,24 +22,23 @@ namespace AuthenticationService.Application.InstructorAuth.Commands
 
         public async Task<string> Handle(InstructorLoginCommand command, CancellationToken cancellationToken)
         {
-            try
+            var instructor = await _authRepo.GetInstructorByEmail(command.Email);
+            if (instructor == null)
             {
-                var instructor = await _authRepo.GetInstructorByEmail(command.Email);
-                if (instructor == null)
-                {
-                    throw new Exception("Instructor not found.");
-                }
-                bool isPasswordValid = BCrypt.Net.BCrypt.Verify(command.Password, instructor.Password);
-                if (!isPasswordValid)
-                {
-                    throw new Exception("Invalid password.");
-                }
-                var token = _jwtInstrService.GenerateJwtToken(instructor);
-                return token;
-            }catch(Exception ex)
-            {
-                throw new Exception(ex.Message);
+                throw new Exception("Instructor not found.");
             }
+            Console.WriteLine($"Stored Hash: {instructor.Password}");
+            Console.WriteLine($"Entered Password: {command.Password}");
+            Console.WriteLine($"Verification Result: {BCrypt.Net.BCrypt.Verify(command.Password, instructor.Password)}");
+
+
+            if (!BCrypt.Net.BCrypt.Verify(command.Password, instructor.Password))
+            {
+                throw new Exception("Invalid password.");
+            }
+
+            return _jwtInstrService.GenerateJwtToken(instructor);
         }
+
     }
 }

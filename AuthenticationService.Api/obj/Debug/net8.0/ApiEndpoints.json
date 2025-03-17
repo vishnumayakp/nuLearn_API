@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "AuthenticationService.Api.Controller.AdminAuthController",
+    "Method": "AdminLogin",
+    "RelativePath": "api/AdminAuth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDto",
+        "Type": "AuthenticationService.Application.DTO.AdminAuthDto.AdminLoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "AuthenticationService.Api.Controller.InstructorAuthController",
     "Method": "ForgetPassword",
     "RelativePath": "api/InstructorAuth/forget-password",

@@ -69,7 +69,7 @@ namespace AuthenticationService.Api.Controller
         {
             try
             {
-                var command = new LoginCommand(loginDto.Email, loginDto.Password);
+                var command = new InstructorLoginCommand(loginDto.Email, loginDto.Password);
                 var res = await _mediator.Send(command);
                 return Ok(new ApiResponse<string>(200, "Success", "User Login Successfully", res));
             }

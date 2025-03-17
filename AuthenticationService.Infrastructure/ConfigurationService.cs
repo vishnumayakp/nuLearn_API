@@ -22,10 +22,12 @@ namespace AuthenticationService.Infrastructure
             services.AddTransient<IEmailService, EmailService>();
             services.AddTransient<IJwtUserService, JwtService>();
             services.AddTransient<IJwtInstrService, JwtInstrService>();
+            services.AddTransient<IJwtAdminService, JwtAdminService>();
             services.AddTransient<ICloudinaryService, CloudinaryService>();
 
             services.AddTransient<IUserAuthRepo, UserAuthRepository>();
             services.AddTransient<IInstructorAuthRepo, InstructorAuthRepo>();
+            services.AddTransient<IAdminAuthRpo, AdminAuthrepo>();
 
             return services;
         }

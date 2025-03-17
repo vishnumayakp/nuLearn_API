@@ -19,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="AdminAuth\Queries\" />
     <Folder Include="InstructorAuth\Queries\" />
     <Folder Include="UserAuth\Queries\" />
   </ItemGroup>

@@ -31,7 +31,7 @@ namespace AuthenticationService.Application.InstructorAuth.Commands
                     throw new Exception("Instructo Not Found");
                 }
 
-                if (instructor.Otp == command.Otp)
+                if (instructor.Otp != command.Otp)
                 {
                     throw new Exception("Invalid Otp");
                 }
@@ -41,6 +41,8 @@ namespace AuthenticationService.Application.InstructorAuth.Commands
                     throw new Exception("OTP has expired.");
                 }
 
+
+
                 var newInstructor = new Instructor
                 {
                     Name = instructor.Name,
@@ -49,6 +51,7 @@ namespace AuthenticationService.Application.InstructorAuth.Commands
                     Password = instructor.Password,
                     Profile = null,
                     Phone = null,
+                    Certificate_Url = instructor.Certificate_Url,
                     Created_by = "Initial Create",
                     Created_on = DateTime.UtcNow,
                     Updated_by = "Initial Create",

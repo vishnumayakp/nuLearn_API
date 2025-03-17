@@ -15,6 +15,7 @@ namespace AuthenticationService.Infrastructure
         public DbSet<User> Users { get; set; }
         public DbSet<VerifyUser> VerifyUsers { get; set; }
         public DbSet<Instructor> Instructors { get; set; }
+        public DbSet<VerifyInstructor> VerifyInstructors { get; set; }
         public DbSet<Admin> Admin { get; set; }
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {

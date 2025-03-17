@@ -13,9 +13,9 @@ namespace AuthenticationService.Application.RepoInterfaces
     {
         Task<Instructor> GetInstructorByEmail(string email);
         Task<bool> AddInstructor(Instructor instructor);
-        Task<bool> AddVerifyUser(VerifyUser verifyUser);
-        Task<VerifyUser> GetVerifyUserByEmail(string email);
-        Task<bool> RemoveVerifyUser(VerifyUser verifyUser);
+        Task<bool> AddVerifyUser(VerifyInstructor verifyUser);
+        Task<VerifyInstructor> GetVerifyUserByEmail(string email);
+        Task<bool> RemoveVerifyUser(VerifyInstructor verifyUser);
         Task<bool> SaveChangesAsync();
     }
 }

@@ -1,5 +1,6 @@
 ﻿using AuthenticationService.Application.RepoInterfaces;
 using AuthenticationService.Application.ServiceInterfaces;
+using AuthenticationService.Domain.Entities;
 using MediatR;
 using PlotLink.DAL.Entities;
 using System;
@@ -50,11 +51,12 @@ namespace AuthenticationService.Application.InstructorAuth.Commands
                     var expiryTime = currentTime.AddMinutes(5);
 
                     //store data in verify user
-                    var userEntity = new VerifyUser();
+                    var userEntity = new VerifyInstructor();
                     userEntity.Name = user.Name;
                     userEntity.Email = user.Email;
                     userEntity.Password = user.Password;
                     userEntity.Otp = otp;
+                    userEntity.Certificate_Url=user.Certificate_Url;
                     userEntity.Expire_time = expiryTime;
 
                     await _authRepo.AddVerifyUser(userEntity);

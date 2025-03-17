@@ -1,4 +1,5 @@
 ﻿using AuthenticationService.Application.RepoInterfaces;
+using AuthenticationService.Domain.Entities;
 using AuthenticationService.Domain.Entity;
 using MediatR;
 using System;
@@ -35,6 +36,8 @@ namespace AuthenticationService.Application.Auth.Commands
             {
                 throw new Exception("OTP has expired.");
             }
+
+
 
             var newUser = new User
             {

@@ -130,6 +130,39 @@ namespace AuthenticationService.Infrastructure.Migrations
                     b.ToTable("Instructors");
                 });
 
+            modelBuilder.Entity("AuthenticationService.Domain.Entities.VerifyInstructor", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Certificate_Url")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<TimeOnly>("Expire_time")
+                        .HasColumnType("time without time zone");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<int>("Otp")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("VerifyInstructors");
+                });
+
             modelBuilder.Entity("AuthenticationService.Domain.Entity.User", b =>
                 {
                     b.Property<Guid>("Id")
