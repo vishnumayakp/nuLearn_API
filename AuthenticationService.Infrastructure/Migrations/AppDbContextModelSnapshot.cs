@@ -22,6 +22,114 @@ namespace AuthenticationService.Infrastructure.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
+            modelBuilder.Entity("AuthenticationService.Domain.Entities.Admin", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Created_by")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("Created_on")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Deleted_by")
+                        .HasColumnType("text");
+
+                    b.Property<DateTime?>("Deleted_on")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<bool>("Is_deleted")
+                        .HasColumnType("boolean");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Updated_by")
+                        .HasColumnType("text");
+
+                    b.Property<DateTime?>("Updated_on")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Admin");
+                });
+
+            modelBuilder.Entity("AuthenticationService.Domain.Entities.Instructor", b =>
+                {
+                    b.Property<Guid>("Instructor_Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Certificate_Url")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Created_by")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("Created_on")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Deleted_by")
+                        .HasColumnType("text");
+
+                    b.Property<DateTime?>("Deleted_on")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<bool>("Is_Blocked")
+                        .HasColumnType("boolean");
+
+                    b.Property<bool>("Is_deleted")
+                        .HasColumnType("boolean");
+
+                    b.Property<string>("LinkedIn_Url")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("character varying(20)");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Phone")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Profile")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Tag")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Updated_by")
+                        .HasColumnType("text");
+
+                    b.Property<DateTime?>("Updated_on")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.HasKey("Instructor_Id");
+
+                    b.ToTable("Instructors");
+                });
+
             modelBuilder.Entity("AuthenticationService.Domain.Entity.User", b =>
                 {
                     b.Property<Guid>("Id")

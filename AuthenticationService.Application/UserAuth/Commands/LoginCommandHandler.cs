@@ -13,9 +13,9 @@ namespace AuthenticationService.Application.Auth.Commands
     public class LoginCommandHandler:IRequestHandler<LoginCommand, string>
     {
         private readonly IUserAuthRepo _userAuthRepo;
-        private readonly IJwtService _jwtService;
+        private readonly IJwtUserService _jwtService;
 
-        public LoginCommandHandler(IUserAuthRepo userAuthRepo, IJwtService jwtService)
+        public LoginCommandHandler(IUserAuthRepo userAuthRepo, IJwtUserService jwtService)
         {
             _userAuthRepo = userAuthRepo;
             _jwtService = jwtService;

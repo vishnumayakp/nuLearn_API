@@ -1,5 +1,4 @@
-﻿using AuthenticationService.Domain.Entity;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace AuthenticationService.Application.ServiceInterfaces
 {
-    public interface IJwtService
+    internal class ICoudinaryService
     {
-        string GenerateJwtToken(User user);
     }
 }

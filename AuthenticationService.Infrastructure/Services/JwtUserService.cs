@@ -11,7 +11,7 @@ using AuthenticationService.Domain.Entity;
 
 namespace AuthenticationService.Infrastructure.Services
 {
-    public class JwtService : IJwtService
+    public class JwtService : IJwtUserService
     {
         private readonly string _jwtSecret;
         private readonly int _jwtExpirationMinutes;
@@ -19,7 +19,7 @@ namespace AuthenticationService.Infrastructure.Services
         {
             if (user == null)
             {
-                throw new UnauthorizedAccessException("Admin not found.");
+                throw new UnauthorizedAccessException("User not found.");
             }
             var securityKey = Environment.GetEnvironmentVariable("JWT_SECRET_KEY");
 

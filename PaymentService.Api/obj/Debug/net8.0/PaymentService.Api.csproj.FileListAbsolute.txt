@@ -65,3 +65,10 @@ D:\Single_Project\nuLearn\PaymentService.Api\obj\Debug\net8.0\PaymentService.Api
 D:\Single_Project\nuLearn\PaymentService.Api\obj\Debug\net8.0\PaymentService.Api.genruntimeconfig.cache
 D:\Single_Project\nuLearn\PaymentService.Api\obj\Debug\net8.0\ref\PaymentService.Api.dll
 D:\Single_Project\nuLearn\PaymentService.Api\obj\Debug\net8.0\PaymentService.Api.sourcelink.json
+D:\Single_Project\nuLearn\PaymentService.Api\bin\Debug\net8.0\BCrypt.Net-Next.dll
+D:\Single_Project\nuLearn\PaymentService.Api\bin\Debug\net8.0\Microsoft.Bcl.Memory.dll
+D:\Single_Project\nuLearn\PaymentService.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Single_Project\nuLearn\PaymentService.Api\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Single_Project\nuLearn\PaymentService.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\Single_Project\nuLearn\PaymentService.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\Single_Project\nuLearn\PaymentService.Api\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

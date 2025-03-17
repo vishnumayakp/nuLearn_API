@@ -1,4 +1,5 @@
-﻿using AuthenticationService.Domain.Entity;
+﻿using AuthenticationService.Domain.Entities;
+using AuthenticationService.Domain.Entity;
 using Microsoft.EntityFrameworkCore;
 using PlotLink.DAL.Entities;
 using System;
@@ -13,6 +14,8 @@ namespace AuthenticationService.Infrastructure
     {
         public DbSet<User> Users { get; set; }
         public DbSet<VerifyUser> VerifyUsers { get; set; }
+        public DbSet<Instructor> Instructors { get; set; }
+        public DbSet<Admin> Admin { get; set; }
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
 

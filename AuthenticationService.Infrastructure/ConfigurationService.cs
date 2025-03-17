@@ -20,7 +20,7 @@ namespace AuthenticationService.Infrastructure
                 options.UseNpgsql(appsettings.DbConnectionString);
             });
             services.AddTransient<IEmailService, EmailService>();
-            services.AddTransient<IJwtService, JwtService>();
+            services.AddTransient<IJwtUserService, JwtUserService>();
 
             services.AddTransient<IUserAuthRepo, UserAuthRepository>();
 
