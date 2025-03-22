@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AuthenticationService.Application.Common.ApiResponse
+namespace UserService.Application.Common.ApiResponse
 {
     public class ApiResponse<T>
     {

@@ -1,13 +1,12 @@
-﻿using AuthenticationService.Application.AdminAuth.Commands;
-using AuthenticationService.Application.Common.ApiResponse;
-using AuthenticationService.Application.DTO.AdminAuthDto;
-using AuthenticationService.Application.DTO.InstructorAuthDto;
-using AuthenticationService.Application.InstructorAuth.Commands;
+﻿using UserService.Application.Common.ApiResponse;
+using UserService.Application.DTO.AdminAuthDto;
+using UserService.Application.DTO.InstructorAuthDto;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using UserService.Application.Auth.AdminAuth.Commands.Login;
 
-namespace AuthenticationService.Api.Controller
+namespace UserService.Api.Controller
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -28,7 +27,7 @@ namespace AuthenticationService.Api.Controller
             {
                 var command = new AdminLoginCommand(loginDto.Email, loginDto.Password);
                 var res = await _mediator.Send(command);
-                return Ok(new ApiResponse<string>(200, "Success", "Admin Login Successfully", res));
+                return Ok(new ApiResponse<string>(200, "Success", res));
             }
             catch (Exception ex)
             {

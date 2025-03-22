@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AuthenticationService.Domain.Entities
+namespace UserService.Domain.Entities
 {
     public class AuditableEntity
     {

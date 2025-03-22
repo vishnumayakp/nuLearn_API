@@ -1,9 +1,15 @@
-﻿using AuthenticationService.Application.Auth.Commands;
-using AuthenticationService.Application.Common.ApiResponse;
-using AuthenticationService.Application.DTO.UserAuthDto;
+﻿using UserService.Application.Auth.UserAuth.Commands;
+using UserService.Application.Auth.UserAuth.Commands.ForgotPw;
+using UserService.Application.Auth.UserAuth.Commands.Login;
+
+using UserService.Application.Common.ApiResponse;
+using UserService.Application.DTO.UserAuthDto;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using UserService.Application.Auth.UserAuth.Commands.Register;
+using UserService.Application.Auth.UserAuth.Commands.VerifyOtp;
+using UserService.Application.Auth.UserAuth.Commands.ResetPw;
 
 namespace AuthenticationService.Api.Controller
 {
@@ -18,7 +24,7 @@ namespace AuthenticationService.Api.Controller
             _mediator = mediator;
         }
         [HttpPost("register")]
-        public async Task<IActionResult> RegisterUser([FromBody] UserRegisterDto userRegisterDto)
+        public async Task<IActionResult> RegisterUser([FromForm] UserRegisterDto userRegisterDto)
         {
             try
             {
@@ -35,7 +41,7 @@ namespace AuthenticationService.Api.Controller
 
         [HttpPost("verify-user")]
 
-        public async Task<IActionResult> VerifyEmail([FromBody] VerifyOtpCommand verifyOtpCommand)
+        public async Task<IActionResult> VerifyEmail([FromForm] VerifyOtpCommand verifyOtpCommand)
         {
             try
             {
@@ -54,13 +60,14 @@ namespace AuthenticationService.Api.Controller
 
         [HttpPost("login")]
 
-        public async Task<IActionResult> UserLogin([FromBody] UserLoginDto userLoginDto)
+        public async Task<IActionResult> UserLogin([FromForm] UserLoginDto userLoginDto)
         {
             try
             {
+                if (userLoginDto == null) return BadRequest(new ApiResponse<string>(400, "Failed", null, "User Login field is required"));
                 var command = new LoginCommand(userLoginDto.Email, userLoginDto.Password);
                 var res = await _mediator.Send(command);
-                return Ok(new ApiResponse<string>(200, "Success", "User Login Successfully",res));        
+                return Ok(new ApiResponse<UserLoginResDto>(200, "Success",res));        
             }
             catch (Exception ex)
             {
@@ -70,7 +77,7 @@ namespace AuthenticationService.Api.Controller
 
         [HttpPost("forget-password")]
 
-        public async Task<IActionResult> ForgetPassword([FromBody] ForgetPasswordCommand command)
+        public async Task<IActionResult> ForgetPassword([FromForm] ForgetPasswordCommand command)
         {
             try
             {
@@ -89,7 +96,7 @@ namespace AuthenticationService.Api.Controller
 
         [HttpPost("verifyOtp-resetpassword")]
 
-        public async Task<IActionResult> VerifyEmailForResetpassWord([FromBody] VerifyOtpResetPwCommand command)
+        public async Task<IActionResult> VerifyEmailForResetpassWord([FromForm] VerifyOtpResetPwCommand command)
         {
             try
             {
@@ -108,7 +115,7 @@ namespace AuthenticationService.Api.Controller
 
         [HttpPost("reset-password")]
 
-        public async Task<IActionResult> ResetPassword([FromBody] ResetPasswordCommand command)
+        public async Task<IActionResult> ResetPassword([FromForm] ResetPasswordCommand command)
         {
             try
             {

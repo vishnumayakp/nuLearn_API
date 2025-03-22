@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OdQjyLwWeIY=",
+  "dgSpecHash": "OB1nEAFwxK4=",
   "success": true,
-  "projectFilePath": "D:\\Single_Project\\nuLearn\\AuthenticationService.Domain\\AuthenticationService.Domain.csproj",
+  "projectFilePath": "D:\\Single_Project\\nuLearn\\AuthenticationService.Domain\\UserService.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

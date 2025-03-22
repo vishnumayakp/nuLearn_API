@@ -5,8 +5,8 @@ D:\Single_Project\nuLearn\CourseService.Domain\obj\Debug\net8.0\CourseService.Do
 D:\Single_Project\nuLearn\CourseService.Domain\obj\Debug\net8.0\CourseService.Domain.AssemblyInfoInputs.cache
 D:\Single_Project\nuLearn\CourseService.Domain\obj\Debug\net8.0\CourseService.Domain.AssemblyInfo.cs
 D:\Single_Project\nuLearn\CourseService.Domain\obj\Debug\net8.0\CourseService.Domain.csproj.CoreCompileInputs.cache
+D:\Single_Project\nuLearn\CourseService.Domain\obj\Debug\net8.0\CourseService.Domain.sourcelink.json
 D:\Single_Project\nuLearn\CourseService.Domain\obj\Debug\net8.0\CourseService.Domain.dll
 D:\Single_Project\nuLearn\CourseService.Domain\obj\Debug\net8.0\refint\CourseService.Domain.dll
 D:\Single_Project\nuLearn\CourseService.Domain\obj\Debug\net8.0\CourseService.Domain.pdb
 D:\Single_Project\nuLearn\CourseService.Domain\obj\Debug\net8.0\ref\CourseService.Domain.dll
-D:\Single_Project\nuLearn\CourseService.Domain\obj\Debug\net8.0\CourseService.Domain.sourcelink.json

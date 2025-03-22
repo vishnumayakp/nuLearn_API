@@ -1,14 +1,14 @@
-﻿using AuthenticationService.Domain.Entities;
-using AuthenticationService.Domain.Entity;
+﻿using UserService.Domain.Entities;
+using UserService.Domain.Entity;
 using Microsoft.EntityFrameworkCore;
-using PlotLink.DAL.Entities;
+using UserService.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AuthenticationService.Infrastructure
+namespace UserService.Infrastructure
 {
     public class AppDbContext : DbContext
     {

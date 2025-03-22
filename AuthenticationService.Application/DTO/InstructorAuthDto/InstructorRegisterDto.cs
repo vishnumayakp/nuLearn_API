@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AuthenticationService.Application.DTO.InstructorAuthDto
+namespace UserService.Application.DTO.InstructorAuthDto
 {
     public class InstructorRegisterDto
     {

@@ -7,23 +7,23 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "nuLearn_ApiGateway", "nuLea
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "services", "services", "{A0A63945-12FA-47E7-B5EB-4C963E352D5F}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AuthenticationService", "AuthenticationService", "{09EBCABC-D92C-4926-873E-EB0DE04C1F8C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UserService", "UserService", "{09EBCABC-D92C-4926-873E-EB0DE04C1F8C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CourseService", "CourseService", "{C767EBC5-6266-4CDB-B045-5FF716533212}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PaymentService", "PaymentService", "{E3AC1ADD-B49F-4389-8026-DEEB29953D97}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthenticationService.Api", "AuthenticationService.Api\AuthenticationService.Api.csproj", "{6A82F057-9265-4F1C-8496-991C03837450}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserService.Api", "AuthenticationService.Api\UserService.Api.csproj", "{6A82F057-9265-4F1C-8496-991C03837450}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CourseService.Api", "CourseService.Api\CourseService.Api.csproj", "{2549558B-D91F-49B7-AFA9-2AFC31EAE845}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PaymentService.Api", "PaymentService.Api\PaymentService.Api.csproj", "{BC015320-448E-4531-ADD8-10C94688FBA0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthenticationService.Application", "AuthenticationService.Application\AuthenticationService.Application.csproj", "{D0A32F51-0693-43B9-847A-472D7672CBB4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserService.Application", "AuthenticationService.Application\UserService.Application.csproj", "{D0A32F51-0693-43B9-847A-472D7672CBB4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthenticationService.Domain", "AuthenticationService.Domain\AuthenticationService.Domain.csproj", "{A063B853-071D-479F-A1FC-0326BEF99147}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserService.Domain", "AuthenticationService.Domain\UserService.Domain.csproj", "{A063B853-071D-479F-A1FC-0326BEF99147}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthenticationService.Infrastructure", "AuthenticationService.Infrastructure\AuthenticationService.Infrastructure.csproj", "{75906062-D775-4446-97FD-1165D326D97A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserService.Infrastructure", "AuthenticationService.Infrastructure\UserService.Infrastructure.csproj", "{75906062-D775-4446-97FD-1165D326D97A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CourseService.Application", "CourseService.Application\CourseService.Application.csproj", "{8732B4BD-5AA0-40F9-A3F5-D558B92B554F}"
 EndProject

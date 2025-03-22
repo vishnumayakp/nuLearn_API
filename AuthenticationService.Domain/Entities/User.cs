@@ -1,12 +1,13 @@
-﻿using AuthenticationService.Domain.Entities;
+﻿using UserService.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UserService.Domain.Entities;
 
-namespace AuthenticationService.Domain.Entity
+namespace UserService.Domain.Entity
 {
     public class User:AuditableEntity
     {

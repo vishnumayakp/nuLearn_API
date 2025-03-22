@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AuthenticationService.Application.DTO.AdminAuthDto
+namespace UserService.Application.DTO.AdminAuthDto
 {
     public class AdminLoginDto
     {

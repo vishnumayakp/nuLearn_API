@@ -1,12 +1,17 @@
-﻿using AuthenticationService.Application.Auth.Commands;
-using AuthenticationService.Application.Common.ApiResponse;
-using AuthenticationService.Application.DTO.InstructorAuthDto;
-using AuthenticationService.Application.DTO.UserAuthDto;
-using AuthenticationService.Application.InstructorAuth.Commands;
-using AuthenticationService.Infrastructure.Services;
+﻿using UserService.Application.Auth.InstructorAuth.Commands;
+using UserService.Application.Auth.InstructorAuth.Commands.ForgotPw;
+using UserService.Application.Auth.InstructorAuth.Commands.Login;
+using UserService.Application.Auth.InstructorAuth.Commands.Register;
+using UserService.Application.Auth.InstructorAuth.Commands.ResetPw;
+using UserService.Application.Auth.InstructorAuth.Commands.VerifyOtp;
+using UserService.Application.Common.ApiResponse;
+using UserService.Application.DTO.InstructorAuthDto;
+using UserService.Application.DTO.UserAuthDto;
+using UserService.Infrastructure.Services;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using UserService.Application.Auth.InstructorAuth.Commands.VerifyOtp;
 
 namespace AuthenticationService.Api.Controller
 {
@@ -69,9 +74,13 @@ namespace AuthenticationService.Api.Controller
         {
             try
             {
+                if(loginDto == null)
+                {
+                    return BadRequest(new ApiResponse<string>(400, "Failed", null, "User Login field is required"));
+                }
                 var command = new InstructorLoginCommand(loginDto.Email, loginDto.Password);
                 var res = await _mediator.Send(command);
-                return Ok(new ApiResponse<string>(200, "Success", "User Login Successfully", res));
+                return Ok(new ApiResponse<InstructorLoginResDto>(200, "Success",res));
             }
             catch (Exception ex)
             {
@@ -81,7 +90,7 @@ namespace AuthenticationService.Api.Controller
 
         [HttpPost("forget-password")]
 
-        public async Task<IActionResult> ForgetPassword([FromBody] ForgetPwCommand command)
+        public async Task<IActionResult> ForgetPassword([FromBody] ForgotPwCommand command)
         {
             try
             {

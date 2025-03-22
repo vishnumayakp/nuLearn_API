@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "d4Gn/EpJXG9G5FQNU7WE5U8JkG2I1VMGyQZlHcu7tkE=",
-  "Source": "AuthenticationService.Api",
-  "BasePath": "_content/AuthenticationService.Api",
+  "Hash": "aEmmtPLHudjRzkmbQgBxm4dJa4cp431iSZNqItmklbI=",
+  "Source": "UserService.Api",
+  "BasePath": "_content/UserService.Api",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

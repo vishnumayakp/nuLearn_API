@@ -5,10 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AuthenticationService.Application.ServiceInterfaces
+namespace UserService.Application.ServiceInterfaces
 {
     public interface ICloudinaryService
     {
         Task<string> UploadCertificate(IFormFile file);
+        Task<string> UploadProfileImage(IFormFile file);
     }
 }

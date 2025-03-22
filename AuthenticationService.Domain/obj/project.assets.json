@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Single_Project\\nuLearn\\AuthenticationService.Domain\\AuthenticationService.Domain.csproj",
-      "projectName": "AuthenticationService.Domain",
-      "projectPath": "D:\\Single_Project\\nuLearn\\AuthenticationService.Domain\\AuthenticationService.Domain.csproj",
+      "projectUniqueName": "D:\\Single_Project\\nuLearn\\AuthenticationService.Domain\\UserService.Domain.csproj",
+      "projectName": "UserService.Domain",
+      "projectPath": "D:\\Single_Project\\nuLearn\\AuthenticationService.Domain\\UserService.Domain.csproj",
       "packagesPath": "C:\\Users\\vishn\\.nuget\\packages\\",
       "outputPath": "D:\\Single_Project\\nuLearn\\AuthenticationService.Domain\\obj\\",
       "projectStyle": "PackageReference",

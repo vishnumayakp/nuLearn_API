@@ -27,6 +27,7 @@ D:\Single_Project\nuLearn\nuLearn_Api\obj\Debug\net8.0\nuLearn_ApiGateway.Assemb
 D:\Single_Project\nuLearn\nuLearn_Api\obj\Debug\net8.0\nuLearn_ApiGateway.csproj.CoreCompileInputs.cache
 D:\Single_Project\nuLearn\nuLearn_Api\obj\Debug\net8.0\nuLearn_ApiGateway.MvcApplicationPartsAssemblyInfo.cs
 D:\Single_Project\nuLearn\nuLearn_Api\obj\Debug\net8.0\nuLearn_ApiGateway.MvcApplicationPartsAssemblyInfo.cache
+D:\Single_Project\nuLearn\nuLearn_Api\obj\Debug\net8.0\nuLearn_ApiGateway.sourcelink.json
 D:\Single_Project\nuLearn\nuLearn_Api\obj\Debug\net8.0\staticwebassets.build.json
 D:\Single_Project\nuLearn\nuLearn_Api\obj\Debug\net8.0\staticwebassets.development.json
 D:\Single_Project\nuLearn\nuLearn_Api\obj\Debug\net8.0\staticwebassets\msbuild.nuLearn_ApiGateway.Microsoft.AspNetCore.StaticWebAssets.props
@@ -41,4 +42,3 @@ D:\Single_Project\nuLearn\nuLearn_Api\obj\Debug\net8.0\refint\nuLearn_ApiGateway
 D:\Single_Project\nuLearn\nuLearn_Api\obj\Debug\net8.0\nuLearn_ApiGateway.pdb
 D:\Single_Project\nuLearn\nuLearn_Api\obj\Debug\net8.0\nuLearn_ApiGateway.genruntimeconfig.cache
 D:\Single_Project\nuLearn\nuLearn_Api\obj\Debug\net8.0\ref\nuLearn_ApiGateway.dll
-D:\Single_Project\nuLearn\nuLearn_Api\obj\Debug\net8.0\nuLearn_ApiGateway.sourcelink.json

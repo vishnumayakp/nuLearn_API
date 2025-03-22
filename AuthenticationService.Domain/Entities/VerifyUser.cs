@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PlotLink.DAL.Entities
+namespace UserService.Domain.Entities
 {
     public class VerifyUser
     {
