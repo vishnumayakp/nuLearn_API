@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using UserService.Application.ServiceInterfaces;
+using UserService.Application.ServiceInterfaces.AuthServiceInterface;
 
 namespace UserService.Application.Consumers
 {
@@ -25,7 +25,7 @@ namespace UserService.Application.Consumers
 
         public async Task Consume(ConsumeContext<CourseApprovalRequested> context)
         {
-            _logger.LogInformation($"Received CourseApprovalRequested for CourseId: {context.Message.CourseId}");
+            _logger.LogInformation($"Received CourseApprovalRequested for CourseId: {context.Message.CourseId},{context.Message.InstructorId}");
 
             bool isApproved = true;
 
@@ -36,6 +36,7 @@ namespace UserService.Application.Consumers
             };
 
             await context.RespondAsync(response);
+            _logger.LogInformation("✅ Sent CourseApproved response.");
 
             var emailDto = new AdminApprovalRequestDto
             {
@@ -48,8 +49,11 @@ namespace UserService.Application.Consumers
                 Videos = context.Message.VideoUrls,
                 Documents = context.Message.DocumentUrls
             };
-
+            _logger.LogInformation("📧 Preparing to send email for CourseId: {CourseId} to Admin.", context.Message.CourseId);
             await _emailService.SentEmail(emailDto);
+
+
+            _logger.LogInformation("📨 Email function executed.");
         }
 
 

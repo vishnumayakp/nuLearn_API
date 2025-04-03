@@ -8,6 +8,7 @@ using CourseService.Application.ServiceInterface;
 using CourseService.Domain.Entities;
 using MassTransit;
 using MediatR;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,14 +24,21 @@ namespace CourseService.Application.Courses.CommandHandler
         private readonly ICloudinaryService _cloudinaryService;
         private readonly IPublishEndpoint _publishEndpoint;
         private readonly IRequestClient<InstructorVerificationRequested> _requestClient;
+        private readonly IRequestClient<CourseApprovalEmailRequest> _emailRequestClient;
+        private readonly ILogger<AddCourseCommandHandlder> _logger;
 
-        public AddCourseCommandHandlder(ICourseRepo courseRepo, ICategoryRepo categoryRepo, ICloudinaryService cloudinaryService, IPublishEndpoint publishEndpoint, IRequestClient<InstructorVerificationRequested> requestClient)
+
+        public AddCourseCommandHandlder(ICourseRepo courseRepo, ICategoryRepo categoryRepo, ICloudinaryService cloudinaryService, 
+            IPublishEndpoint publishEndpoint, IRequestClient<InstructorVerificationRequested> requestClient, 
+            ILogger<AddCourseCommandHandlder> logger, IRequestClient<CourseApprovalEmailRequest> emailRequestClient)
         {
             _courseRepo = courseRepo;
             _categoryRepo = categoryRepo;
             _cloudinaryService = cloudinaryService;
             _publishEndpoint = publishEndpoint;
             _requestClient = requestClient;
+            _logger = logger;
+            _emailRequestClient = emailRequestClient;
         }
 
         public async Task<Guid> Handle(AddCourseCommand request, CancellationToken cancellationToken)
@@ -42,7 +50,6 @@ namespace CourseService.Application.Courses.CommandHandler
                 {
                     throw new Exception("Category not found");
                 }
-
 
                 var verificationEvent = new InstructorVerificationRequested(request.InstructorId);
                 var response = await _requestClient.GetResponse<InstructorVerfied>(verificationEvent);
@@ -56,9 +63,10 @@ namespace CourseService.Application.Courses.CommandHandler
 
                 var image = await _cloudinaryService.UploadCourseImage(request.ImageUrl);
 
-                var videoUrls = request.Videos != null && request.Videos.Any()
-                    ? await _cloudinaryService.UploadVideoAsync(request.Videos.Where(v => v.ContentType.StartsWith("video/")).ToList())
+                var videoUrls = request.Videos?.Where(v => v.ContentType.StartsWith("video/")).ToList() is { Count: > 0 } videoFiles
+                    ? await _cloudinaryService.UploadVideoAsync(videoFiles)
                     : new List<string>();
+
 
 
                 var documentUrls = request.Documents != null && request.Documents.Any()
@@ -105,6 +113,10 @@ namespace CourseService.Application.Courses.CommandHandler
                         Category = category.Category_Name,
                     });
 
+
+                    _logger.LogInformation("📢 Publishing AdminApprovalRequestDto for CourseId: {CourseId}, InstructorId: {InstructorId}", verifyCourse.Id, verifyCourse.InstructorId);
+
+
                     await _publishEndpoint.Publish(new CourseApprovalRequested(verifyCourse.Id, 
                         verifyCourse.InstructorId,
                         verifyCourse.CourseName,
@@ -114,6 +126,15 @@ namespace CourseService.Application.Courses.CommandHandler
                         verifyCourse.VideoUrls,
                         verifyCourse.DocumentUrls
                         ));
+                    _logger.LogInformation("✅ Successfully published AdminApprovalRequestDto.",verifyCourse.InstructorId);
+
+                    var emailResponse =  await _emailRequestClient.GetResponse<CourseApprovalEmailResponse>(
+                        new CourseApprovalEmailRequest(
+                            verifyCourse.InstructorId,
+                            verifyCourse.CourseName,
+                            verifyCourse.ImageUrl,
+
+                        ))
 
                     return verifyCourse.Id;
                 }

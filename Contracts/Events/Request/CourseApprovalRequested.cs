@@ -9,7 +9,7 @@ namespace Contracts.Events.Request
     public class CourseApprovalRequested
     {
         public Guid CourseId { get; set; }
-        public Guid InstructorId { get; set; }  
+        public Guid InstructorId { get; set; }
         public string CourseName { get; set; }
         public string ImageUrl { get; set; }  
         public decimal Price { get; set; }      

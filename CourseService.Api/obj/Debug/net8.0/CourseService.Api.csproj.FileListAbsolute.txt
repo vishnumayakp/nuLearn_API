@@ -162,3 +162,12 @@ D:\Single_Project\nuLearn\CourseService.Api\bin\Debug\net8.0\Microsoft.IdentityM
 D:\Single_Project\nuLearn\CourseService.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 D:\Single_Project\nuLearn\CourseService.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 D:\Single_Project\nuLearn\CourseService.Api\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Single_Project\nuLearn\CourseService.Api\bin\Debug\net8.0\BCrypt.Net-Next.dll
+D:\Single_Project\nuLearn\CourseService.Api\bin\Debug\net8.0\FluentValidation.dll
+D:\Single_Project\nuLearn\CourseService.Api\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+D:\Single_Project\nuLearn\CourseService.Api\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+D:\Single_Project\nuLearn\CourseService.Api\bin\Debug\net8.0\Microsoft.Bcl.Memory.dll
+D:\Single_Project\nuLearn\CourseService.Api\bin\Debug\net8.0\UserService.Application.dll
+D:\Single_Project\nuLearn\CourseService.Api\bin\Debug\net8.0\UserService.Domain.dll
+D:\Single_Project\nuLearn\CourseService.Api\bin\Debug\net8.0\UserService.Application.pdb
+D:\Single_Project\nuLearn\CourseService.Api\bin\Debug\net8.0\UserService.Domain.pdb

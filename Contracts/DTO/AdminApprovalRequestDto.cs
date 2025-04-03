@@ -9,6 +9,7 @@ namespace Contracts.DTO
     public class AdminApprovalRequestDto
     {
         public Guid InstructorId { get; set; }
+        public string InstructorName { get; set; }
         public Guid CourseId { get; set; }
         public string CourseName { get; set; }
         public string CourseImage { get; set; }
