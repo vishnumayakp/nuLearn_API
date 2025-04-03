@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "1Ot/crJTfqM=",
+  "dgSpecHash": "TH8/CNaobIQ=",
   "success": true,
   "projectFilePath": "D:\\Single_Project\\nuLearn\\AuthenticationService.Api\\UserService.Api.csproj",
   "expectedPackageFiles": [
@@ -163,6 +163,12 @@
       "targetGraphs": [
         "net8.0"
       ]
+    },
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
     }
   ]
 }

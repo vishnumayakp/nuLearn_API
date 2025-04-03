@@ -1,3 +1,6 @@
+D:\Single_Project\nuLearn\bin\Debug\net8.0\CourseService.Domain.deps.json
+D:\Single_Project\nuLearn\bin\Debug\net8.0\CourseService.Domain.dll
+D:\Single_Project\nuLearn\bin\Debug\net8.0\CourseService.Domain.pdb
 D:\Single_Project\nuLearn\CourseService.Domain\bin\Debug\net8.0\CourseService.Domain.deps.json
 D:\Single_Project\nuLearn\CourseService.Domain\bin\Debug\net8.0\CourseService.Domain.dll
 D:\Single_Project\nuLearn\CourseService.Domain\bin\Debug\net8.0\CourseService.Domain.pdb

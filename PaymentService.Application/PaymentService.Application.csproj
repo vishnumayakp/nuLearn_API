@@ -11,8 +11,4 @@
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\AuthenticationService.Domain\AuthenticationService.Domain.csproj" />
-  </ItemGroup>
-
 </Project>
